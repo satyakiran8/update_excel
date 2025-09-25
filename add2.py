@@ -80,8 +80,7 @@ def update_excel(name, age, city, phone_number, file_path="data.xlsx"):
         # Save the file
         wb.save(file_path)
         
-        print(f"✅ SUCCESS! Appended row {next_s_no}: {name} | {age} | {city} | {phone_number}")
-        return True
+        return f"✅ SUCCESS! Appended row {next_s_no}: {name} | {age} | {city} | {phone_number}"
         
     except PermissionError:
         
